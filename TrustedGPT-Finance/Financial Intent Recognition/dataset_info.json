@@ -1,0 +1,38 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_intent_recognition",
+      "domain": "Finance",
+      "dimension": "Financial Intent Recognition",
+      "task": "Financial Intent Recognition",
+      "organization": "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach": [
+        "constructed manually",
+        "constructed with LLM"
+      ],
+      "source": [
+        "constructed manually",
+        "GPT4o and deepseek"
+      ],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融业务能力评测，用于评估模型判断金融文本意图是否相似的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags": [
+        "Finance task",
+        "constructed manually",
+        "constructed with GPT4"
+      ],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+        "prompt": "根据给定的文本和意图标签，选择符合对话表述的标签。文本：我现在欠款压力太大了，能重新分期吗？A.确认还款,B.重新分期,C.答应转告,D.消除征信",
+        "label": "B"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter": "Yikun Xu"
+    }
+  ]
+}

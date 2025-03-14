@@ -1,0 +1,38 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_semantic_similarity",
+      "domain": "Finance",
+      "dimension": "Financial Semantic Similarity",
+      "task": "Financial Semantic Similarity",
+      "organization": "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach": [
+        "constructed manually",
+        "constructed with LLM"
+      ],
+      "source": [
+        "constructed manually",
+        "GPT4o and deepseek"
+      ],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融业务能力评测，用于评估模型判断金融文本意图是否相似的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags": [
+        "Finance task",
+        "constructed manually",
+        "constructed with GPT4"
+      ],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+        "prompt": "对于主题：投资理财，判断下面两个文本是否属于该主题。文本1：使用定期存款可以获得更高的利息收益 文本2：购买理财产品可以有效分散风险。A.是,B.否",
+        "label": "B"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter": "Yikun Xu"
+    }
+  ]
+}

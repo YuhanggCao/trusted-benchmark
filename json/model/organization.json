@@ -1,0 +1,84 @@
+{
+  "organizations": [
+    {
+      "name": "Openai",
+      "url": "https://openai.com/"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/"
+    },
+    {
+      "name": "Google",
+      "url": "https://about.google/"
+    },
+    {
+      "name": "360",
+      "url": "http://www.360.cn/about/index.html"
+    },
+    {
+      "name": "腾讯",
+      "url":"https://www.tencent.com/zh-cn/"
+    },
+    {
+      "name": "智谱华章",
+      "url": "https://zhipuai.cn/"
+    },
+    {
+      "name": "深度求索",
+      "url": "https://www.deepseek.com/"
+    },
+    {
+      "name": "阿里巴巴",
+      "url": "https://www.alibabagroup.com/about-alibaba"
+    },
+    {
+      "name": "百川智能",
+      "url": "https://www.baichuan-ai.com/home"
+    },
+    {
+      "name": "零一万物",
+      "url": "https://lingyiwanwu.com/"
+    },
+    {
+      "name": "商汤科技",
+      "url": "https://www.sensetime.com/cn"
+    },
+    {
+      "name": "字节跳动",
+      "url": "https://www.bytedance.com/"
+    },
+    {
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/"
+    },
+    {
+      "name": "百度",
+      "url": "https://home.baidu.com/"
+    },
+    {
+      "name": "月之暗面",
+      "url": "https://www.moonshot.cn/"
+    },
+    {
+      "name": "Minimax",
+      "url": "https://www.minimaxi.com/"
+    },
+    {
+      "name": "阶跃星辰",
+      "url": "https://www.stepfun.com/"
+    },
+    {
+      "name": "科大讯飞",
+      "url": "https://www.iflytek.com/iflytek"
+    },
+    {
+      "name": "Meta",
+      "url": "https://about.meta.com/"
+    },
+    {
+      "name": "上海人工智能实验室",
+      "url": "https://www.shlab.org.cn/"
+    }
+  ]
+}

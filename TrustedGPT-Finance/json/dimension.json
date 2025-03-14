@@ -1,0 +1,58 @@
+{
+    "dimensions": [
+        {
+            "ChineseName": "金融知识",
+            "EnglishName": "Financial Knowledge",
+            "ChineseIntro": "该维度用于评估模型对金融知识的掌握程度，包括金融学、保险学、会计学、银行学和金融从业资格。",
+            "EnglishIntro": "This dimension is used to evaluate the model's mastery of financial knowledge, including finance, insurance, accounting, banking, and financial qualifications."
+        },
+        {
+            "ChineseName": "金融文本相似",
+            "EnglishName": "Financial Semantic Similarity",
+            "ChineseIntro": "该维度用于评估模型判断金融文本意图是否相似的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to detect the similarity of financial texts."
+        },
+        {
+            "ChineseName": "金融意图识别",
+            "EnglishName": "Financial Intent Recognition",
+            "ChineseIntro": "该维度用于评估模型判断金融文本属于何种电销或催收意图的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to recognize the financial intent of a financial text."
+        },
+        {
+            "ChineseName": "金融业务合规",
+            "EnglishName": "Financial Business Compliance",
+            "ChineseIntro": "该维度用于评估模型判断业务流程是否违反了相关安全要求的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to determine whether the business process complies relevant security requirements."
+        },
+        {
+            "ChineseName": "金融情感迁移",
+            "EnglishName": "Financial Emotion Transfer",
+            "ChineseIntro": "该维度用于评估模型根据给定的情感语气改写句子的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to rephrase a sentence according to a given emotion."
+        },
+        {
+            "ChineseName": "金融信息提取",
+            "EnglishName": "Financial Information Retrieval",
+            "ChineseIntro": "该维度用于评估模型整合长文本及回答问题的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to integrate long texts and answer questions."
+        },
+        {
+            "ChineseName": "金融对话摘要",
+            "EnglishName": "Financial Dialogue Summarization",
+            "ChineseIntro": "该维度用于评估模型概括对话内容的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to summarize the content of the conversation."
+        },
+        {
+            "ChineseName": "金融问答合成",
+            "EnglishName": "Financial Question Answering",
+            "ChineseIntro": "该维度用于评估模型总结已有信息回答问题的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to answer questions based on the given information."
+        },
+        {
+            "ChineseName": "金融动作识别",
+            "EnglishName": "Financial Action Recognition",
+            "ChineseIntro": "该维度用于评估模型提取对话动作类别的能力。",
+            "EnglishIntro": "This dimension is used to evaluate the model's ability to recognize the action categories in a dialogue."
+        }
+    ]
+}

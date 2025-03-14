@@ -1,0 +1,64 @@
+{
+    "dataset": [
+        {
+            "name": "explicit_subset",
+            "domain": "Code",
+            "dimension": "Commit Message Generation",
+            "task": "Commit Message Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "GitHub"
+            ],
+            "time": "2024-05",
+            "scale": "496239",
+            "intro": "该数据集是一个显式提交消息生成数据集。显式提交消息是对代码更改的表层描述，并直接反映代码修改。原版数据集explicit_subset.csv中含有四个字段: (1)commitId: 该提交的SHA; (2)commitTime: 该提交的时间; (3)diff: 代码变更; (4)message: 对应的提交消息。在标准化后的数据集explicit_subset.json中，提示词prompt包含了任务描述、要求以及示例，以帮助大模型更好地理解任务，引导大模型分析代码修改后生成显式提交消息。",
+            "url": "https://drive.google.com/drive/folders/10V3hVD_Z5KtARsiyPSqot0wW-4fdhS8A",
+            "language": "English",
+            "tags": [
+                "Commit Message Generation",
+                "collected"
+            ],
+            "example": {
+                "commitId": "1bfc3595ce2e14cdc03decfe350f20e139e3c877",
+                "commitTime": "2022-07-06 15:16:41+02:00",
+                "diff": "new file <nl> ppp DataJpaRuntimeHints . java <nl> + package org . springframework . data . jpa . aot ; <nl> + import java . util . Arrays ; <nl> + import org . springframework . aot . hint . MemberCategory ; <nl> + import org . springframework . aot . hint . RuntimeHints ; <nl> + import org . springframework . aot . hint . RuntimeHintsRegistrar ; <nl> + import org . springframework . aot . hint . TypeReference ; <nl> + import org . springframework . beans . factory . aspectj . AnnotationBeanConfigurerAspect ; <nl> + import <nl>",
+                "message": "add aot repository support"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Zhiquan Huang"
+        },
+        {
+            "name": "implicit_subset",
+            "domain": "Code",
+            "dimension": "Commit Message Generation",
+            "task": "Commit Message Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "GitHub"
+            ],
+            "time": "2024-05",
+            "scale": "136597",
+            "intro": "该数据集是一个隐式提交消息生成数据集。隐式提交消息是对代码更改的逻辑进行理解或推理后所总结的摘要，它反映了代码更改的深层含义(例如原因、目的、影响等)。原版数据集implicit_subset.csv中含有四个字段: (1)commitId: 该提交的SHA; (2)commitTime: 该提交的时间; (3)diff: 代码变更; (4)message: 对应的提交消息。在标准化后的数据集implicit_subset.json中，提示词prompt包含了任务描述、要求以及示例，以帮助大模型更好地理解任务，引导大模型分析代码修改后生成隐式提交消息。",
+            "url": "https://drive.google.com/drive/folders/10V3hVD_Z5KtARsiyPSqot0wW-4fdhS8A",
+            "language": "English",
+            "tags": [
+                "Commit Message Generation",
+                "collected"
+            ],
+            "example": {
+                "commitId": "2b9c71c61738297f94c499d4b27a2f3162119677",
+                "commitTime": "2004-11-11 21:37:27+00:00",
+                "diff": "mmm RtfHeaderFooter . java <nl> ppp RtfHeaderFooter . java <nl> - content = doc . getMapper() . mapElement(par) ; <nl> - ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + if(this . document != null) { <nl> + content = this . document . getMapper() . mapElement(par) ; <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + } else { <nl> + content = par ; <nl> + } <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl>",
+                "message": "fix a null pointer exception when be add to a rtfheadergroup"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Zhiquan Huang"
+        }
+    ]
+}

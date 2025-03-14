@@ -1,0 +1,29 @@
+{
+    "dataset": [
+      {
+        "name": "Big-Vul",
+        "domain": "code",
+        "dimension": "Others",
+        "task": "classification",
+        "organization" : "New Jersey Institute of Technology, The University of Texas at Dallas",
+        "construction approach" : ["constructed manually"],
+        "source": ["constructed manually"],
+        "time": "2020-05",
+        "scale": "3754",
+        "intro": "该数据集用以验证漏洞检测性能",
+        "url": "https://github.com/ZeoVan/MSR_20_Code_vulnerability_CSV_Dataset",
+        "language": "English",
+        "tags" : ["constructed manually"],
+        "paper title": "A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries",
+        "paper link": "https://ieeexplore.ieee.org/document/10148758",
+        "licence": "None",
+        "example": {
+            "prompt": "Results on the use of hydroxychloroquine as a treatment for Covid-19 have shown no significant differences in health outcomes between the control group and patients who received the experimental drug. ",
+            "label": "Refutes"
+        },
+        "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+        "submitter" : "Yinan Chen"
+      }
+    ]
+ }
+  

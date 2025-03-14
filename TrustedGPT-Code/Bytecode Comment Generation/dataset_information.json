@@ -1,0 +1,35 @@
+{
+    "dataset": [
+        {
+            "name": "Bytecue_dataset",
+            "domain": "Code",
+            "dimension": "Bytecode Comment Generation",
+            "task": "Bytecode Comment Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "MVNRepository"
+            ],
+            "time": "2024-05",
+            "scale": "122,555",
+            "intro": "该数据集是一个用于字节码层面的注释生成数据集。在标准化后的数据集中，每个json文件中包含了api,cfg,bytecode以及注释信息，可以帮助大模型更好地理解任务，引导大模型根据字节码的信息生成注释。",
+            "url": "https://drive.google.com/drive/folders/1aJ9ksi9a2Cy7KUiPzYq-agkL9rCSYMWM?usp=sharing",
+            "language": "English，Chinese",
+            "tags": [
+                "Bytecode Comments Generation",
+                "collected"
+            ],
+            "example": {
+                "api": "SQLParts.getParamsString,SQLParts.append",
+                "comment": "Appends an SQL part consisting of a list of bind parameters",
+                "bytecode": "public com almworks sqlite4java s q l part append params int <LINE> code <LINE> aload_0 <LINE> aload_0 <LINE> iload_1 <LINE> invokespecial #30 method get params string i ljava lang string <LINE> invokevirtual #7 method append ljava lang string lcom almworks sqlite4java s q l part <LINE> areturn",
+                "cfg": "<LEFT> r0 = @ this <LEFT> i0 = @ parameter0 <LEFT> $ r1 = specialinvoke r0 get params string i0 <LEFT> $ r2 = r0 append $ r1 <LEFT> return $ r2 <RIGHT> return $ r2 <RIGHT> $ r2 = r0 append $ r1 <RIGHT> $ r1 = specialinvoke r0 get params string i0 <RIGHT> i0 = @ parameter0 <RIGHT> r0 = @ this",
+                "api_pair": "(SQLParts.append,1)(SQLParts.getParamsString,1)"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Junqi Chen"
+        }
+    ]
+}

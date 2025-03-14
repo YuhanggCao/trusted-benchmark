@@ -1,0 +1,38 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_business_compliance",
+      "domain": "Finance",
+      "dimension": "Financial Business Compliance",
+      "task": "Financial Business Compliance",
+      "organization": "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach": [
+        "constructed manually",
+        "constructed with LLM"
+      ],
+      "source": [
+        "constructed manually",
+        "GPT4o and deepseek"
+      ],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融业务能力评测，用于评估模型判断业务流程是否违反了相关安全要求。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags": [
+        "Finance task",
+        "constructed manually",
+        "constructed with GPT4"
+      ],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+        "prompt": "下面是一段坐席和客户的对话，从下面的选项中选出坐席的违规现象。对话内容：坐席：中午好，欢迎来到我们的客服中心，请问有什么可以帮助您的？ 客户：周末也不休吗？我想咨询下贷款申请。 坐席：我们全年无休，随时为您服务。您需要贷款服务，我可以帮您初步审核资料。 客户：你们有逾期会怎样？ 坐席：如果不是恶意逾期，视情况我们会有相应的措施来帮助您。 客户：这种服务收费吗？ 坐席：服务是免费的，但贷款一旦审批完成，我们会根据您的信用情况收取一定的利息。 客户：我现在只有身份证，能申请吗？ 坐席：身份证是必须条件，但我们还需要您的收入证明或者是资产证明。 客户：没工作怎么收入证明？ 坐席：如果暂时没有工作，我们可以协助您了解适合的贷款产品，但这通常会影响您的贷款额度。 客户：你们会不会直接泄露我的信息？ 坐席：理解您的忧虑，我们严格遵守隐私保护法规，不会泄露您的任何个人信息。 客户：如果我现在不回复你，你会怎么样？ 坐席：请您稍等，如果您长时间无回复，我们会自动结束本次对话服务。 客户：知道了。那么你们的工号是？ 坐席：抱歉，公司规定我们不能透露工号。 客户：那我怎么知道你是谁？ 坐席：您可以直接称呼我为客服01，我们会尽力为您提供真诚的服务。 客户：哦，谢谢，我了解了。先挂了吧。 坐席：好的，随时欢迎回来咨询，祝您有个愉快的一天！如果还有其他问题，随时联系我们。A.三方拒代偿,B.三方直泄,C.拒绝提示工号,D.虚假转告",
+        "label": "C"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter": "Yikun Xu"
+    }
+  ]
+}

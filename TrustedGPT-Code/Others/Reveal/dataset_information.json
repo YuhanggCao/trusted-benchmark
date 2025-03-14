@@ -1,0 +1,32 @@
+{
+    "dataset": [
+      {
+        "name": "Reveal",
+        "domain": "Code",
+        "dimension": "Others",
+        "task": "classification",
+        "organization" : "Columbia University",
+        "construction approach" : ["constructed manually"],
+        "source": ["constructed manually"],
+        "time": "2022-09",
+        "scale": "24734",
+        "intro": "该数据集用以验证漏洞检测性能",
+        "url": "https://github.com/VulDetProject/ReVeal",
+        "language": "English",
+        "tags" : ["constructed manually"],
+        "paper title": "Deep Learning Based Vulnerability Detection: Are We There Yet?",
+        "paper link": "https://ieeexplore.ieee.org/document/9448435",
+        "licence": "None",
+        "example": {
+            "prompt": {"code": "static int alloc_addbyter ( int output , FILE * data ) {\n struct asprintf * infop = ( struct asprintf * ) data ;\n unsigned char outc = ( unsigned char ) output ;\n if ( ! infop -> buffer ) {\n infop -> buffer = malloc ( 32 ) ;\n if ( ! infop -> buffer ) {\n infop -> fail = 1 ;\n return - 1 ;\n }\n infop -> alloc = 32 ;\n infop -> len = 0 ;\n }\n else if ( infop -> len + 1 >= infop -> alloc ) {\n char * newptr ;\n newptr = realloc ( infop -> buffer , infop -> alloc * 2 ) ;\n if ( ! newptr ) {\n infop -> fail = 1 ;\n return - 1 ;\n }\n infop -> buffer = newptr ;\n infop -> alloc *= 2 ;\n }\n infop -> buffer [ infop -> len ] = outc ;\n infop -> len ++ ;\n return outc ;\n }",
+                      "hash": -8228664527580018723,
+                      "project": "debian",
+                      "size": 26},
+            "label": "vulnerable"
+        },
+        "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+        "submitter" : "Yinan Chen"
+      }
+    ]
+ }
+  

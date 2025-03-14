@@ -1,0 +1,190 @@
+{
+    "dataset": [
+        {
+            "name": "explicit_subset",
+            "domain": "code",
+            "dimension": "Commit Message Generation",
+            "task": "Commit Message Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "GitHub"
+            ],
+            "time": "2024-05",
+            "scale": "496239",
+            "intro": "该数据集是一个显式提交消息生成数据集。显式提交消息是对代码更改的表层描述，并直接反映代码修改。原版数据集explicit_subset.csv中含有四个字段: (1)commitId: 该提交的SHA; (2)commitTime: 该提交的时间; (3)diff: 代码变更; (4)message: 对应的提交消息。在标准化后的数据集explicit_subset.json中，提示词prompt包含了任务描述、要求以及示例，以帮助大模型更好地理解任务，引导大模型分析代码修改后生成显式提交消息。",
+            "url": "https://drive.google.com/drive/folders/10V3hVD_Z5KtARsiyPSqot0wW-4fdhS8A",
+            "language": "English",
+            "tags": [
+                "Commit Message Generation",
+                "collected"
+            ],
+            "example": {
+                "commitId": "1bfc3595ce2e14cdc03decfe350f20e139e3c877",
+                "commitTime": "2022-07-06 15:16:41+02:00",
+                "diff": "new file <nl> ppp DataJpaRuntimeHints . java <nl> + package org . springframework . data . jpa . aot ; <nl> + import java . util . Arrays ; <nl> + import org . springframework . aot . hint . MemberCategory ; <nl> + import org . springframework . aot . hint . RuntimeHints ; <nl> + import org . springframework . aot . hint . RuntimeHintsRegistrar ; <nl> + import org . springframework . aot . hint . TypeReference ; <nl> + import org . springframework . beans . factory . aspectj . AnnotationBeanConfigurerAspect ; <nl> + import <nl>",
+                "message": "add aot repository support"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Zhiquan Huang"
+        },
+        {
+            "name": "implicit_subset",
+            "domain": "code",
+            "dimension": "Commit Message Generation",
+            "task": "Commit Message Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "GitHub"
+            ],
+            "time": "2024-05",
+            "scale": "136597",
+            "intro": "该数据集是一个隐式提交消息生成数据集。隐式提交消息是对代码更改的逻辑进行理解或推理后所总结的摘要，它反映了代码更改的深层含义(例如原因、目的、影响等)。原版数据集implicit_subset.csv中含有四个字段: (1)commitId: 该提交的SHA; (2)commitTime: 该提交的时间; (3)diff: 代码变更; (4)message: 对应的提交消息。在标准化后的数据集implicit_subset.json中，提示词prompt包含了任务描述、要求以及示例，以帮助大模型更好地理解任务，引导大模型分析代码修改后生成隐式提交消息。",
+            "url": "https://drive.google.com/drive/folders/10V3hVD_Z5KtARsiyPSqot0wW-4fdhS8A",
+            "language": "English",
+            "tags": [
+                "Commit Message Generation",
+                "collected"
+            ],
+            "example": {
+                "commitId": "2b9c71c61738297f94c499d4b27a2f3162119677",
+                "commitTime": "2004-11-11 21:37:27+00:00",
+                "diff": "mmm RtfHeaderFooter . java <nl> ppp RtfHeaderFooter . java <nl> - content = doc . getMapper() . mapElement(par) ; <nl> - ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + if(this . document != null) { <nl> + content = this . document . getMapper() . mapElement(par) ; <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + } else { <nl> + content = par ; <nl> + } <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl> + ((RtfBasicElement) this . content) . setInHeader(true) ; <nl>",
+                "message": "fix a null pointer exception when be add to a rtfheadergroup"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Zhiquan Huang"
+        },
+        {
+            "name": "Big-Vul",
+            "domain": "code",
+            "dimension": "Others",
+            "task": "classification",
+            "organization": "New Jersey Institute of Technology, The University of Texas at Dallas",
+            "construction approach": [
+                "constructed manually"
+            ],
+            "source": [
+                "constructed manually"
+            ],
+            "time": "2020-05",
+            "scale": "3754",
+            "intro": "该数据集用以验证漏洞检测性能",
+            "url": "https://github.com/ZeoVan/MSR_20_Code_vulnerability_CSV_Dataset",
+            "language": "English",
+            "tags": [
+                "constructed manually"
+            ],
+            "paper title": "A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries",
+            "paper link": "https://ieeexplore.ieee.org/document/10148758",
+            "licence": "None",
+            "example": {
+                "prompt": "Results on the use of hydroxychloroquine as a treatment for Covid-19 have shown no significant differences in health outcomes between the control group and patients who received the experimental drug. ",
+                "label": "Refutes"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yinan Chen"
+        },
+        {
+            "name": "Bytecue_dataset",
+            "domain": "Code",
+            "dimension": "Bytecode Comment Generation",
+            "task": "Bytecode Comment Generation",
+            "organization": "Sun Yat-sen University",
+            "construction approach": [
+                "collected"
+            ],
+            "source": [
+                "MVNRepository"
+            ],
+            "time": "2024-05",
+            "scale": "122,555",
+            "intro": "该数据集是一个用于字节码层面的注释生成数据集。在标准化后的数据集中，每个json文件中包含了api,cfg,bytecode以及注释信息，可以帮助大模型更好地理解任务，引导大模型根据字节码的信息生成注释。",
+            "url": "https://drive.google.com/drive/folders/1aJ9ksi9a2Cy7KUiPzYq-agkL9rCSYMWM?usp=sharing",
+            "language": "English，Chinese",
+            "tags": [
+                "Bytecode Comments Generation",
+                "collected"
+            ],
+            "example": {
+                "api": "SQLParts.getParamsString,SQLParts.append",
+                "comment": "Appends an SQL part consisting of a list of bind parameters",
+                "bytecode": "public com almworks sqlite4java s q l part append params int <LINE> code <LINE> aload_0 <LINE> aload_0 <LINE> iload_1 <LINE> invokespecial #30 method get params string i ljava lang string <LINE> invokevirtual #7 method append ljava lang string lcom almworks sqlite4java s q l part <LINE> areturn",
+                "cfg": "<LEFT> r0 = @ this <LEFT> i0 = @ parameter0 <LEFT> $ r1 = specialinvoke r0 get params string i0 <LEFT> $ r2 = r0 append $ r1 <LEFT> return $ r2 <RIGHT> return $ r2 <RIGHT> $ r2 = r0 append $ r1 <RIGHT> $ r1 = specialinvoke r0 get params string i0 <RIGHT> i0 = @ parameter0 <RIGHT> r0 = @ this",
+                "api_pair": "(SQLParts.append,1)(SQLParts.getParamsString,1)"
+            },
+            "submitting organization": "Sun Yat-sen University",
+            "submitter": "Junqi Chen"
+        },
+        {
+            "name": "Devign",
+            "domain": "Code",
+            "dimension": "Others",
+            "task": "classification",
+            "organization": "Nanyang Technological University",
+            "construction approach": [
+                "constructed manually"
+            ],
+            "source": [
+                "constructed manually"
+            ],
+            "time": "2019-09",
+            "scale": "48687",
+            "intro": "该数据集用以验证漏洞检测性能",
+            "url": "https://github.com/saikat107/Devign",
+            "language": "English",
+            "tags": [
+                "constructed manually"
+            ],
+            "paper title": "Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks.",
+            "paper link": "https://arxiv.org/pdf/1909.03496",
+            "licence": "None",
+            "example": {
+                "prompt": "static av_cold int vdadec_init(AVCodecContext *avctx)\n\n{\n\n    VDADecoderContext *ctx = avctx->priv_data;\n\n    struct vda_context *vda_ctx = &ctx->vda_ctx;\n\n    OSStatus status;\n\n    int ret;\n\n\n\n    ctx->h264_initialized = 0;\n\n\n\n    /* init pix_fmts of codec */\n\n    if (!ff_h264_vda_decoder.pix_fmts) {\n\n        if (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber10_7)\n\n            ff_h264_vda_decoder.pix_fmts = vda_pixfmts_prior_10_7;\n\n        else\n\n            ff_h264_vda_decoder.pix_fmts = vda_pixfmts;\n\n    }\n\n\n\n    /* init vda */\n\n    memset(vda_ctx, 0, sizeof(struct vda_context));\n\n    vda_ctx->width = avctx->width;\n\n    vda_ctx->height = avctx->height;\n\n    vda_ctx->format = 'avc1';\n\n    vda_ctx->use_sync_decoding = 1;\n\n    vda_ctx->use_ref_buffer = 1;\n\n    ctx->pix_fmt = avctx->get_format(avctx, avctx->codec->pix_fmts);\n\n    switch (ctx->pix_fmt) {\n\n    case AV_PIX_FMT_UYVY422:\n\n        vda_ctx->cv_pix_fmt_type = '2vuy';\n\n        break;\n\n    case AV_PIX_FMT_YUYV422:\n\n        vda_ctx->cv_pix_fmt_type = 'yuvs';\n\n        break;\n\n    case AV_PIX_FMT_NV12:\n\n        vda_ctx->cv_pix_fmt_type = '420v';\n\n        break;\n\n    case AV_PIX_FMT_YUV420P:\n\n        vda_ctx->cv_pix_fmt_type = 'y420';\n\n        break;\n\n    default:\n\n        av_log(avctx, AV_LOG_ERROR, \"Unsupported pixel format: %d\\n\", avctx->pix_fmt);\n\n        goto failed;\n\n    }\n\n    status = ff_vda_create_decoder(vda_ctx,\n\n                                   avctx->extradata, avctx->extradata_size);\n\n    if (status != kVDADecoderNoErr) {\n\n        av_log(avctx, AV_LOG_ERROR,\n\n                \"Failed to init VDA decoder: %d.\\n\", status);\n\n        goto failed;\n\n    }\n\n    avctx->hwaccel_context = vda_ctx;\n\n\n\n    /* changes callback functions */\n\n    avctx->get_format = get_format;\n\n    avctx->get_buffer2 = get_buffer2;\n\n#if FF_API_GET_BUFFER\n\n    // force the old get_buffer to be empty\n\n    avctx->get_buffer = NULL;\n\n#endif\n\n\n\n    /* init H.264 decoder */\n\n    ret = ff_h264_decoder.init(avctx);\n\n    if (ret < 0) {\n\n        av_log(avctx, AV_LOG_ERROR, \"Failed to open H.264 decoder.\\n\");\n\n        goto failed;\n\n    }\n\n    ctx->h264_initialized = 1;\n\n\n\n    return 0;\n\n\n\nfailed:\n\n    vdadec_close(avctx);\n\n    return -1;\n\n}\n",
+                "label": "0"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yinan Chen"
+        },
+        {
+            "name": "Reveal",
+            "domain": "Code",
+            "dimension": "Others",
+            "task": "classification",
+            "organization": "Columbia University",
+            "construction approach": [
+                "constructed manually"
+            ],
+            "source": [
+                "constructed manually"
+            ],
+            "time": "2022-09",
+            "scale": "24734",
+            "intro": "该数据集用以验证漏洞检测性能",
+            "url": "https://github.com/VulDetProject/ReVeal",
+            "language": "English",
+            "tags": [
+                "constructed manually"
+            ],
+            "paper title": "Deep Learning Based Vulnerability Detection: Are We There Yet?",
+            "paper link": "https://ieeexplore.ieee.org/document/9448435",
+            "licence": "None",
+            "example": {
+                "prompt": {
+                    "code": "static int alloc_addbyter ( int output , FILE * data ) {\n struct asprintf * infop = ( struct asprintf * ) data ;\n unsigned char outc = ( unsigned char ) output ;\n if ( ! infop -> buffer ) {\n infop -> buffer = malloc ( 32 ) ;\n if ( ! infop -> buffer ) {\n infop -> fail = 1 ;\n return - 1 ;\n }\n infop -> alloc = 32 ;\n infop -> len = 0 ;\n }\n else if ( infop -> len + 1 >= infop -> alloc ) {\n char * newptr ;\n newptr = realloc ( infop -> buffer , infop -> alloc * 2 ) ;\n if ( ! newptr ) {\n infop -> fail = 1 ;\n return - 1 ;\n }\n infop -> buffer = newptr ;\n infop -> alloc *= 2 ;\n }\n infop -> buffer [ infop -> len ] = outc ;\n infop -> len ++ ;\n return outc ;\n }",
+                    "hash": -8228664527580018723,
+                    "project": "debian",
+                    "size": 26
+                },
+                "label": "vulnerable"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yinan Chen"
+        }
+    ]
+}

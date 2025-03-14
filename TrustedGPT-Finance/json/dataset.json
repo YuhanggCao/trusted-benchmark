@@ -1,0 +1,310 @@
+{
+    "dataset": [
+        {
+            "name": "zhilu_benchmark_financial_knowledge",
+            "domain": "Finance",
+            "dimension": "Financial Knowledge",
+            "task": "Financial Knowledge",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融知识评测，用于评估模型对金融知识的掌握程度，包括金融学、保险学、会计学、银行学和金融从业资格。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "持票人应在提示付款期内向承兑人提示付款。提示付款期自票据到期日起（ ），最后一日遇法定休假日、大额支付系统非营业日、电子商业汇票系统非营业日顺延。A.10日,B.10个工作日,C.3日,D.5日",
+                "label": "A"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_semantic_similarity",
+            "domain": "Finance",
+            "dimension": "Financial Semantic Similarity",
+            "task": "Financial Semantic Similarity",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型判断金融文本意图是否相似的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "对于主题：投资理财，判断下面两个文本是否属于该主题。文本1：使用定期存款可以获得更高的利息收益 文本2：购买理财产品可以有效分散风险。A.是,B.否",
+                "label": "B"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_intent_recognition",
+            "domain": "Finance",
+            "dimension": "Financial Intent Recognition",
+            "task": "Financial Intent Recognition",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型判断金融文本意图是否相似的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "根据给定的文本和意图标签，选择符合对话表述的标签。文本：我现在欠款压力太大了，能重新分期吗？A.确认还款,B.重新分期,C.答应转告,D.消除征信",
+                "label": "B"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_business_compliance",
+            "domain": "Finance",
+            "dimension": "Financial Business Compliance",
+            "task": "Financial Business Compliance",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型判断业务流程是否违反了相关安全要求。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "下面是一段坐席和客户的对话，从下面的选项中选出坐席的违规现象。对话内容：坐席：中午好，欢迎来到我们的客服中心，请问有什么可以帮助您的？ 客户：周末也不休吗？我想咨询下贷款申请。 坐席：我们全年无休，随时为您服务。您需要贷款服务，我可以帮您初步审核资料。 客户：你们有逾期会怎样？ 坐席：如果不是恶意逾期，视情况我们会有相应的措施来帮助您。 客户：这种服务收费吗？ 坐席：服务是免费的，但贷款一旦审批完成，我们会根据您的信用情况收取一定的利息。 客户：我现在只有身份证，能申请吗？ 坐席：身份证是必须条件，但我们还需要您的收入证明或者是资产证明。 客户：没工作怎么收入证明？ 坐席：如果暂时没有工作，我们可以协助您了解适合的贷款产品，但这通常会影响您的贷款额度。 客户：你们会不会直接泄露我的信息？ 坐席：理解您的忧虑，我们严格遵守隐私保护法规，不会泄露您的任何个人信息。 客户：如果我现在不回复你，你会怎么样？ 坐席：请您稍等，如果您长时间无回复，我们会自动结束本次对话服务。 客户：知道了。那么你们的工号是？ 坐席：抱歉，公司规定我们不能透露工号。 客户：那我怎么知道你是谁？ 坐席：您可以直接称呼我为客服01，我们会尽力为您提供真诚的服务。 客户：哦，谢谢，我了解了。先挂了吧。 坐席：好的，随时欢迎回来咨询，祝您有个愉快的一天！如果还有其他问题，随时联系我们。A.三方拒代偿,B.三方直泄,C.拒绝提示工号,D.虚假转告",
+                "label": "C"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_emotion_transfer",
+            "domain": "Finance",
+            "dimension": "Financial Emotion Transfer",
+            "task": "Financial Emotion Transfer",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型根据给定的情感语气改写句子的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "请用【关心客户】语气改写下面句子，保持语义不变：刚才查看了一下，您的贷款情况比较复杂，需要详细方案。",
+                "label": "我刚才审查了您的贷款状况，发现情况较为复杂，需要制定详细的还款计划。"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_information_retrieval",
+            "domain": "Finance",
+            "dimension": "Financial Information Retrieval",
+            "task": "Financial Information Retrieval",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型整合长文本及回答问题的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "根据给定的文本，简要回答下面问题。文本：\n【标题】掌握股市的脉动：从投资心理到技术分析\n股票市场是一个复杂且多变的环境，影响股票价格的因素众多，其中投资者心理和技术分析占据了重要位置。理解这两者不仅能帮助投资者在股市中获得成功，还能增强对市场动态的把握。本文将深入探讨这两方面的内容，以期为投资者提供实用的指导。\n首先，投资者心理在股市中扮演着至关重要的角色。心理学家指出，投资者在面对市场时常常被情绪所驱动，例如恐惧和贪婪。这些情绪会影响到投资者的决策，从而导致市场波动。例如，在市场大幅下跌时，许多投资者可能会因为恐惧而提前抛售股票，形成“羊群效应”，进一步加剧市场的下行压力。而在牛市期间，投资者的贪婪可能促使他们高位追涨，导致不理智的投资行为。\n为了应对投资心理的波动，投资者可以采取一些策略来调整自己的情绪。例如，设定合理的投资目标、严格执行止损策略以及保持投资的纪律性，都是很有效的方法。这些策略可以帮助投资者在面对市场波动时保持冷静，从而做出更理性的决策。\n接下来，我们来看看技术分析在股票投资中的作用。技术分析是一种基于市场行为和价格走势图的分析方法，旨在利用历史价格和成交量数据预测未来价格走势。投资者可以通过图表分析、趋势线、移动平均线等工具识别出潜在的买入和卖出机会。\n技术分析的核心在于“趋势”。根据道氏理论，市场趋势可以分为上升趋势、下降趋势和横盘整理。识别出这些趋势后，投资者可以根据不同的市场环境选择合适的策略。例如，在上升趋势中，投资者可以选择低位买入，而在下降趋势中，则可能需要采取相对保守的策略，避免不必要的损失。\n除了趋势，技术分析的另一个重要概念是支撑位和阻力位。支撑位是指股票价格在下跌过程中可能遭遇买盘支持的水平，而阻力位则是上涨过程中可能遭遇卖盘的水平。合理地判断支撑位和阻力位，可以帮助投资者制定更科学的入场和离场策略。\n当然，虽然技术分析能提供诸多信息，但它并不是万无一失的工具。市场受多种突发事件的影响，投资者需要结合基本面分析，从而全面评估股票的投资价值。此外，心理因素也可能在短期内导致价格偏离其合理价值，因此投资者在使用技术分析时需要保持谨慎。\n总结来说，成功的股票投资需要综合考虑投资者心理和技术分析的多重因素。通过了解和调整自己的情绪，以及运用技术分析工具，投资者能够更好地把握股市脉动，做出明智的投资决策。尽管市场风险常在，但只要保持冷静和理性，相信每位投资者都能在这个变幻莫测的市场中找到自己的机会。\n问题：在成功的股票投资中，最准确的说法是什么？",
+                "label": "股票市场的技术分析工具能够帮助投资者识别趋势和支撑位，但这些工具的有效性会受到突发事件的影响，因此投资者仍需综合考虑市场情绪。"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_dialogue_summarization",
+            "domain": "Finance",
+            "dimension": "Financial Dialogue Summarization",
+            "task": "Financial Dialogue Summarization",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型概括对话内容的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "给定一段客服和用户之间的对话，从中提取出关键信息的摘要。对话内容：客户：您好，我想了解一下什么是理财？ 客服：您好！理财是通过合理安排个人或家庭的资金，以实现财务增长和风险控制的活动。您对理财的哪方面特别感兴趣呢？ 客户：我对投资产品比较好奇，比如股票和基金。 客服：股票是购买公司股份，而基金则是将资金集中投资于多种资产的组合。您想了解哪种投资更适合您？ 客户：我最近在考虑风险承受能力问题，您能帮我分析一下吗？ 客服：当然可以！首先，您可以评估一下自己的投资经验、资产状况和对短期波动的心理承受能力。这些都是判断风险承受能力的重要因素。 客户：好的，那我应该如何选择适合自己的理财产品呢？ 客服：选择理财产品时，考虑您的风险偏好、投资期限和流动性需求，同时也要关注产品的历史表现和费用结构。 客户：听起来选择还真不简单，有没有推荐？ 客服：如果您是理财新手，可以考虑低风险的债券基金或货币基金，逐步了解市场后再尝试其他产品。 客户：谢谢您的建议！我会仔细考虑的。 客服：不客气！如有其他问题，欢迎随时咨询。",
+                "label": "客户询问理财的定义，客服解释理财是资金的合理安排。客户对投资产品感兴趣，特别是股票和基金，并询问风险承受能力。客服提供评估建议并指导客户选择适合的理财产品，推荐低风险的债券基金或货币基金。"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_question_answering",
+            "domain": "Finance",
+            "dimension": "Financial Question Answering",
+            "task": "Financial Question Answering",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型总结已有信息回答问题的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "根据相关FAQ回答玩家问题：为什么我的角色升级后没有获得新的技能点，还有什么办法可以快速升级角色？\n与此问题相关的业务FAQ：\nQ：等级提升后技能点未增加 A：等级提升后，每次提升会获得一定数额的技能点，可在角色属性界面查看并分配。同时，每个角色也有天赋点的设置，需要在角色天赋界面进行分配。两者配合使用可以加快角色成长。\nQ：加快角色升级的方法 A：除了完成主线任务和每日任务，玩家还可以通过挑战副本、参加活动等方式获得经验，并用来升级。使用道具也可以增加经验获得速度，建议玩家多多参与游戏内各项活动来加速角色成长哦~",
+                "label": "如果您升级后没有获得技能点，请注意在属性界面和天赋界面进行分配。同时，玩家还可以通过各种方式获得经验来加快升级，建议多参与游戏活动来提升角色等级。"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        },
+        {
+            "name": "zhilu_benchmark_action_recognition",
+            "domain": "Finance",
+            "dimension": "Financial Action Recognition",
+            "task": "Financial Action Recognition",
+            "organization": "SYSU-MUCFC-FinTech-Research-Center",
+            "construction approach": [
+                "constructed manually",
+                "constructed with LLM"
+            ],
+            "source": [
+                "constructed manually",
+                "GPT4o and deepseek"
+            ],
+            "time": "unpublished",
+            "scale": "unpublished",
+            "intro": "金融业务能力评测，用于评估模型提取对话动作类别的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+            "url": "unpublished",
+            "language": "Chinese",
+            "tags": [
+                "Finance task",
+                "constructed manually",
+                "constructed with GPT4"
+            ],
+            "paper title": "None",
+            "paper link": "None",
+            "licence": "None",
+            "example": {
+                "prompt": "请从对话文本中检查客户和坐席的动作。注意事项：（1）“坐席”系列动作(A开头)只能由坐席触发，“客户”系列动作(U开头)只有客户能触发；（2）如果一句话不触发动作或模糊则不输出；（3）输出的索引和对话标记索引严格对应。（4）输出为json格式。动作列表：{'A01': '坐席-执行自报家门', 'U01': '客户-执行承诺7天内还款', 'U02': '客户-执行拒绝代偿', 'A02': '坐席-执行错误更新电话请求（封闭式提问）', 'U03': '客户-执行降低频次', 'G01': '协商不一致', 'G02': '差错类型-执行未使用免疫话术-执行再分期', 'U04': '客户-执行逾期账户查询', 'A03': '坐席-执行安抚触发敏感词客户', 'A04': '坐席-执行请求转告动作', 'U05': '客户-执行确认转告', 'U06': '客户-执行通话涉及提供材料', 'U07': '客户-执行否认借款', 'U08': '客户-执行禁呼意图', 'A05': '坐席-执行一手阶段特有警示语', 'A06': '坐席不恰当用词', 'A07': '坐席-执行应对客户还款异议', 'A08': '坐席-执行对投诉意向进行安抚', 'A09': '坐席-执行使用调解身份', 'U09': '客户-执行请求撤销诉讼/仲裁', 'A10': '坐席-执行请求代偿动作', 'A11': '坐席-执行使用不符合客观事实的警示语', 'U10': '客户-执行停联三方', 'U11': '客户-执行无理投诉', 'U12': '客户-执行承诺未兑现', 'U13': '客户-执行表示听不清', 'A12': '坐席-执行有损公司形象的话术', 'U14': '客户-执行停催6个月以上/不确定', 'A13': '坐席-执行超权限承诺', 'A14': '坐席-执行强迫三方表述', 'U15': '客户-执行答应代偿', 'A15': '坐席-执行询问联系方式', 'U16': '客户-执行提及投诉', 'A16': '坐席-执行用语中提及未成年人', 'G03': '差错类型-执行未使用免疫话术-执行禁呼', 'A17': '坐席-执行承诺缓催', 'U17': '客户-执行展期方案', 'A18': '坐席-执行更新电话请求', 'A19': '坐席-执行伪冒身份', 'A20': '坐席-执行提及征信动作', 'U18': '客户-执行停用要求不要再用机器人催收了', 'U19': '客户-执行语音留言/彩铃过滤', 'A21': '坐席-执行提供错误信息', 'A22': '坐席-执行提供邮箱', 'A23': '坐席-执行承诺禁呼', 'A24': '坐席-执行M1阶段特有警示语', 'U20': '客户-执行代客维权', 'U21': '客户-执行触发敏感词的话术行为', 'U22': '客户-执行未逾期/非我司客户收到催收短信', 'U23': '客户-执行请求停催或缓催', 'G04': '差错类型-执行未使用免疫话术-执行停准/缓催', 'U24': '客户-执行存在还款异议', 'U25': '客户-执行三方确认贷款信息', 'U26': '客户-执行人身攻击', 'U27': '客户-执行夸大事实', 'A25': '坐席-执行告知工号', 'U28': '客户-执行停用文字催收', 'U29': '客户-执行月度约定还款，分期', 'U30': '客户-执行承诺还款', '426': '坐席-执行透露公司催收策略', 'A27': '坐席-执行客户听不清时错误回复', 'A28': '坐席-执行答应客户停催或缓催或减免', 'U31': '客户-执行减免费用', '429': '坐席-执行询问客户是否有其他问题', 'U32': '客户-执行三方查询他人账户', 'G05': '差错类型-执行未使用免疫话术-执行减免', '430': '坐席-执行透露客户隐私信息', 'U33': '客户-执行承诺30天内还款', 'G06': '协商一致', 'U34': '客户-执行手机号码匹配', 'A31': '坐席-执行引导外部投诉', 'U35': '客户-执行承诺180天内还款', 'A32': '坐席-执行核实客户是同事或单位身份', 'A33': '坐席-执行脏话', 'A34': '坐席-执行核实客户是否为欠款人亲人身份动作', 'U36': '客户-执行确认身份', '435': '坐席-执行误诱导相关话语', 'U37': '客户-执行否认为欠款人亲人', 'A36': '坐席-执行M2阶段特有警示语', 'A37': '坐席-执行口头语列表', 'A38': '坐席-执行核身动作', 'A39': '坐席-执行提供客户信息', 'U38': '客户-执行询问坐席工号', 'U39': '客户-执行无法联系', 'A40': '坐席-执行答应放款', 'A41': '坐席-执行透露客户欠款信息', 'U40': '客户-执行否认身份', 'A42': '坐席-执行承诺停催', 'U41': '客户-执行冒充身份', 'U42': '客户-执行确认三方贷款信息', 'A43': '坐席-执行提及再见', 'U43': '客户-执行承认为欠款人亲人并代还', 'A44': '坐席-执行更新号码请求'}\n1.坐席：感谢您联系我们，有什么可以帮到您的呢？\n2.客户：我要查我的贷款信息，快点回我！\n3.坐席：好的，我需要您的姓名和注册手机号核实身份，以便查询贷款详情。\n4.客户：我是李雷，手机号是13523334455，赶快！\n5.坐席：明白了。正在帮您查询，请您稍候。\n6.客户：你们服务太慢了，没人来躲起来了是不是？\n7.坐席：不好意思让您等了，正在努力查询您的信息。\n8.客户：你们怎么这么无能啊？\n9.坐席：我们非常注重客户体验，如果操作中有任何延迟我向您表示歉意。\n10.客户：你现在告诉我，这一期该还多少钱？\n11.坐席：您的本月还款额为1500元，请按时处理，谢谢您的理解。\n12.客户：你们客服都是这么低效吗？\n13.坐席：我会尽快核实并给出准确的答案，感谢您的耐心。\n14.客户：好吧，希望你能公正地处理。\n15.坐席：一定保证公正处理，请稍候。\n16.客户：今天的贷款我确实还不了，你们打算怎样？\n17.坐席：我们会根据实际情况为您提供可能的解决方案，稍后我会详细解释。\n18.客户：你们烦不烦啊，直接告诉我结果不就得了？\n19.坐席：请您提供更多具体信息，以便我能给出准确的建议和帮助。\n20.客户：（无回答）\n21.坐席：如果有其他问题或者需要进一步帮助，请随时联系我们。\n22.客户：（仍旧无回答）\n23.坐席：看您暂时没有回复，如果您没有问题了我将结束这次对话，如有需要欢迎再次联系，祝您一切顺利！",
+                "label": "{""8"": ""U26"", ""3"": ""U42""}"
+            },
+            "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+            "submitter": "Yikun Xu"
+        }
+    ]
+}

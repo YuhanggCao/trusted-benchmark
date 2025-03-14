@@ -1,0 +1,28 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_financial_knowledge",
+      "domain": "Finance",
+      "dimension": "Financial Knowledge",
+      "task": "Financial Knowledge",
+      "organization" : "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach" : ["constructed manually", "constructed with LLM"],
+      "source": ["constructed manually", "GPT4o and deepseek"],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融知识评测，用于评估模型对金融知识的掌握程度，包括金融学、保险学、会计学、银行学和金融从业资格。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags" : ["Finance task", "constructed manually", "constructed with GPT4"],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+          "prompt":"持票人应在提示付款期内向承兑人提示付款。提示付款期自票据到期日起（ ），最后一日遇法定休假日、大额支付系统非营业日、电子商业汇票系统非营业日顺延。A.10日,B.10个工作日,C.3日,D.5日",
+          "label": "A"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter" : "Yikun Xu"
+    }
+  ]
+}

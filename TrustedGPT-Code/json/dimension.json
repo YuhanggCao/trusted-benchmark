@@ -1,0 +1,16 @@
+{
+    "dimensions": [
+        {
+            "ChineseName": "提交消息生成",
+            "EnglishName": "Commit Message Generation",
+            "ChineseIntro": "提交消息是对代码变更的简洁自然语言总结。提交消息生成任务可用于评估模型分析理解代码修改，并生成有价值的、信息丰富的提交消息的能力。",
+            "EnglishIntro": "Commit messages are succinct natural language summaries of code changes. The commit message generation task can be used to evaluate the ability of the model analysis to understand code modifications and generate valuable and informative commit messages."
+        },
+        {
+            "ChineseName": "其他",
+            "EnglishName": "Others",
+            "ChineseIntro": "该维度用于存储那些被TrustLLM等评测工作包含，但是并不具备评估属性的数据集",
+            "EnglishIntro": "This dimension is used to store datasets that are included in a measurement effort such as TrustLLM, but do not have evaluation attributes."
+        }
+    ]
+}

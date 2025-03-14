@@ -1,0 +1,38 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_dialogue_summarization",
+      "domain": "Finance",
+      "dimension": "Financial Dialogue Summarization",
+      "task": "Financial Dialogue Summarization",
+      "organization": "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach": [
+        "constructed manually",
+        "constructed with LLM"
+      ],
+      "source": [
+        "constructed manually",
+        "GPT4o and deepseek"
+      ],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融业务能力评测，用于评估模型概括对话内容的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags": [
+        "Finance task",
+        "constructed manually",
+        "constructed with GPT4"
+      ],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+        "prompt": "给定一段客服和用户之间的对话，从中提取出关键信息的摘要。对话内容：客户：您好，我想了解一下什么是理财？ 客服：您好！理财是通过合理安排个人或家庭的资金，以实现财务增长和风险控制的活动。您对理财的哪方面特别感兴趣呢？ 客户：我对投资产品比较好奇，比如股票和基金。 客服：股票是购买公司股份，而基金则是将资金集中投资于多种资产的组合。您想了解哪种投资更适合您？ 客户：我最近在考虑风险承受能力问题，您能帮我分析一下吗？ 客服：当然可以！首先，您可以评估一下自己的投资经验、资产状况和对短期波动的心理承受能力。这些都是判断风险承受能力的重要因素。 客户：好的，那我应该如何选择适合自己的理财产品呢？ 客服：选择理财产品时，考虑您的风险偏好、投资期限和流动性需求，同时也要关注产品的历史表现和费用结构。 客户：听起来选择还真不简单，有没有推荐？ 客服：如果您是理财新手，可以考虑低风险的债券基金或货币基金，逐步了解市场后再尝试其他产品。 客户：谢谢您的建议！我会仔细考虑的。 客服：不客气！如有其他问题，欢迎随时咨询。",
+        "label": "客户询问理财的定义，客服解释理财是资金的合理安排。客户对投资产品感兴趣，特别是股票和基金，并询问风险承受能力。客服提供评估建议并指导客户选择适合的理财产品，推荐低风险的债券基金或货币基金。"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter": "Yikun Xu"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": [
+    {
+      "name": "zhilu_benchmark_question_answering",
+      "domain": "Finance",
+      "dimension": "Financial Question Answering",
+      "task": "Financial Question Answering",
+      "organization": "SYSU-MUCFC-FinTech-Research-Center",
+      "construction approach": [
+        "constructed manually",
+        "constructed with LLM"
+      ],
+      "source": [
+        "constructed manually",
+        "GPT4o and deepseek"
+      ],
+      "time": "unpublished",
+      "scale": "unpublished",
+      "intro": "金融业务能力评测，用于评估模型总结已有信息回答问题的能力。该数据为中山大学和招联金融人工智能研究中心共同开发的金融领域benchmark，将于9月底发布。",
+      "url": "unpublished",
+      "language": "Chinese",
+      "tags": [
+        "Finance task",
+        "constructed manually",
+        "constructed with GPT4"
+      ],
+      "paper title": "None",
+      "paper link": "None",
+      "licence": "None",
+      "example": {
+        "prompt": "根据相关FAQ回答玩家问题：为什么我的角色升级后没有获得新的技能点，还有什么办法可以快速升级角色？\n与此问题相关的业务FAQ：\nQ：等级提升后技能点未增加 A：等级提升后，每次提升会获得一定数额的技能点，可在角色属性界面查看并分配。同时，每个角色也有天赋点的设置，需要在角色天赋界面进行分配。两者配合使用可以加快角色成长。\nQ：加快角色升级的方法 A：除了完成主线任务和每日任务，玩家还可以通过挑战副本、参加活动等方式获得经验，并用来升级。使用道具也可以增加经验获得速度，建议玩家多多参与游戏内各项活动来加速角色成长哦~",
+        "label": "如果您升级后没有获得技能点，请注意在属性界面和天赋界面进行分配。同时，玩家还可以通过各种方式获得经验来加快升级，建议多参与游戏活动来提升角色等级。"
+      },
+      "submitting organization": "School of Software Engineering, Sun Yat-sen University",
+      "submitter": "Yikun Xu"
+    }
+  ]
+}
